@@ -1,4 +1,5 @@
-//Winston Jose
+// COMSC 210 | Lab12 |  Winston Jose
+// Github link: https://github.com/winstonjose01/COMSC-210-Lab12-STDarray
 
 # include <iostream>
 # include <array>
@@ -28,7 +29,7 @@ bool sortbyPrice (GroceryItem &, GroceryItem &); // Function to compare prices
 int main(){
 
     fstream budgetfile; // File stream object for reading from a file
-    string filename = "budget.csv"; // File name to open
+    string filename = "grocery.csv"; // File name to open
     int fstat; // File status
     string line; // String to hold each line from the file
     array<GroceryItem, SIZE> list; // Array of structs to hold items and prices

@@ -104,19 +104,19 @@ int main(){
     // Sum all prices using accumulate - use the 4th argument with a lambda fn to sum the price elements
     cout << "\n13. Sum: $" << accumulate(list.begin(), list.end(),0.0,[](double sum, GroceryItem &b)
          {return sum + b.prices;});
-    cout << "\n----------------------------------------------------\n";
+    cout << "----------------------------------------------------\n";
 
     // Create several empty <array> and fill with one value
     array<GroceryItem,3> list3;
-    cout << "Array of emppty structs and fill with one value\n";
+    cout << "14. Array of emppty structs and fill with one value\n";
     fill(list3.begin(), list3.end(), GroceryItem{"Butter", 5.23});
     for (GroceryItem val :  list3) cout << "\t" << val.item << " | $" << val.prices << endl;
-     cout << "\n----------------------------------------------------\n";
+    cout << "----------------------------------------------------\n";
 
     array<GroceryItem,5> list5;
     fill(list5.begin(), list5.end(), GroceryItem{"Cookies", 3.56});
     for (GroceryItem val :  list5) cout << "\t" << val.item << " | $" << val.prices << endl;
-     cout << "----------------------------------------------------\n";
+    cout << "----------------------------------------------------\n";
 
     budgetfile.close(); // Close the file
 

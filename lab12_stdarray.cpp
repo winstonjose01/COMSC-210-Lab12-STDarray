@@ -61,7 +61,11 @@ int main(){
      cout << "----------------------------------------------------\n";
     
     // Accessing individual elements: 
-
+    cout << "\nElement 11 item and price: "<< list.at(11).item << " | $" << list.at(11).prices;
+    cout << "\nElement 29 item and price: "<< list[29].item << " | $" << list[29].prices;
+    cout << "\nFront item and price: "<< list.front().item<< " | $" << list.front().prices;
+    cout << "\nBack item and price: "<< list.back().item<< " | $" << list.back().prices;
+    
 
 
     return 0;

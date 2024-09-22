@@ -21,8 +21,8 @@ struct GroceryItem{
 
 //Function declarations
 int openFile(fstream &, string);  // Function to open  file
-bool sortbyItem (GroceryItem &, GroceryItem &); // Function to compare items alphabetically
-bool sortbyPrice (GroceryItem &, GroceryItem &); // Function to compare prices
+bool sortbyItem (const GroceryItem &, const GroceryItem &); // Function to compare items alphabetically
+bool sortbyPrice (const GroceryItem &, const GroceryItem &); // Function to compare prices
 
 int main(){
 
@@ -126,11 +126,11 @@ int main(){
 
 }
 
-bool sortbyItem(GroceryItem &a, GroceryItem&b){
+bool sortbyItem(const GroceryItem &a, const GroceryItem&b){
     return (a.item < b.item);
 }
 
-bool sortbyPrice(GroceryItem &a, GroceryItem&b){
+bool sortbyPrice(const GroceryItem &a, const GroceryItem&b){
     return (a.prices < b.prices);
 }
 
